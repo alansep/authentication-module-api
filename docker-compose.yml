@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  user-auth-db:
+    image: mysql:8.0.31
+    expose:
+      - "3306"
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: user-credentials
+      MYSQL_USER: developer
+      MYSQL_PASSWORD: developer
