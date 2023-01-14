@@ -3,4 +3,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: developer
     password: developer
-    url: jdbc:mysql://localhost:3306/user-credentials?useSSL=false&createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/user-credentials?useSSL=false&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true
+springdoc:
+  swagger-ui:
+    path: /
