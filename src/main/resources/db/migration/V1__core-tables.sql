@@ -6,7 +6,7 @@ CREATE TABLE `roles` (
 CREATE TABLE `users` (
 	`id` varchar(36) PRIMARY KEY,
 	`username` varchar(20) NOT NULL,
-	`password` varchar(50) NOT NULL,
+	`password` varchar(45) NOT NULL,
 	`enabled` boolean NOT NULL default true);
 
 CREATE TABLE `user_roles` (
